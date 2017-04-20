@@ -1,0 +1,26 @@
+#form-multiplicator {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#form-multiplicator > div {
+  padding: 10px 20px;
+}
+
+#form-multiplicator input[type="text"] {
+  width: 80px;
+  text-align: center;
+  font-size: 36px;
+}
+
+#form-multiplicator .product {
+  width: 80px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 20px;
+  font-size: 24px;
+}
