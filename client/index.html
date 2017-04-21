@@ -6,12 +6,14 @@
 
 <body>
   <form id="form-multiplicator">
-  	<div>
-  	  <input id="factor1" type="text" size="3" autocomplete="off"/>
-  	</div>
-  	<div>
-  	  <input id="factor2" type="text" size="3" autocomplete="off"/>
-  	</div>
+    <div id="input-num" class="numbers">
+  	  <div>
+  	    <input type="text" size="3" autocomplete="off"/>
+  	  </div>
+  	  <div>
+  	    <input type="text" size="3" autocomplete="off"/>
+  	  </div>
+    </div>
   	<div>
   	  <span class="product"> ? </span>
   	</div>
@@ -19,8 +21,9 @@
   	  <button> Calculate! </button>
   	</div>
   	<div>
-  	  <button> New Factor </button>
+  	  <button id="newfactor"> New Factor </button>
   	</div>
   </form>
+  <script src="bundle.js"></script>
 </body>
 </html>

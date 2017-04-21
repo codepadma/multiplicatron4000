@@ -7,6 +7,10 @@
   padding: 10px 20px;
 }
 
+#input-num > div {
+  padding: 10px;
+}
+
 #form-multiplicator input[type="text"] {
   width: 80px;
   text-align: center;
