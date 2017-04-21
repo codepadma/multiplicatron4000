@@ -8,10 +8,10 @@ class ViewManager {
   onClickNewFactor(event) {
   	event.preventDefault();
   	let divElement = document.createElement('div');
-    let element = document.createElement('input');
-    element.setAttribute('type', 'text');
-    element.setAttribute('size', 3);
-    divElement.appendChild(element);
+    let inputElement = document.createElement('input');
+    inputElement.setAttribute('type', 'text');
+    inputElement.setAttribute('size', 3);
+    divElement.appendChild(inputElement);
     document.getElementById('input-num').appendChild(divElement);
   }
 
