@@ -1,5 +1,5 @@
 {
-  "name": "addinator",
+  "name": "multiplicator",
   "version": "0.1.0",
   "description": "Sample app to Add deployed to cloud",
   "main": "server/server.js",
