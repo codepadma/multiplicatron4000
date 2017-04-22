@@ -17,10 +17,14 @@ class ViewManager {
 
   onSubmit(event) {
   	event.preventDefault();
-    let numbers = [...document.getElementById('form-multiplicator').elements]
-                   .filter(element => element.nodeName === 'INPUT');
-    numbers = numbers.map(element => element.value);
-    let product = numbers.reduce((num1, num2) => num1 * num2);
+    let product = NaN;
+    let numbers = Array.from(document.getElementById('form-multiplicator').elements)
+                   .filter(element => element.nodeName === 'INPUT')
+                   .map(element => parseInt(element.value, 10))  
+                   .filter(num => !Number.isNaN(num));
+    if (numbers.length >= 2) {
+      product = numbers.reduce((num1, num2) => num1 * num2);
+    }
     this.renderProduct(product);
   }
 
