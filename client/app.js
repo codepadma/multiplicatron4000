@@ -1,4 +1,4 @@
-
+const multiply = require('./multiplicator.js');
 class ViewManager {
   connectEventHandlers() {
     document.getElementById('form-multiplicator').addEventListener('submit', this.onSubmit.bind(this));
@@ -23,7 +23,7 @@ class ViewManager {
                    .map(element => parseInt(element.value, 10))  
                    .filter(num => !Number.isNaN(num));
     if (numbers.length >= 2) {
-      product = numbers.reduce((num1, num2) => num1 * num2);
+      product = multiply(numbers);
     }
     this.renderProduct(product);
   }

@@ -1,5 +1,4 @@
-var multiply = function() {
-  var numbers = [...arguments];
+var multiply = function(numbers) {
   return numbers.reduce((a, b) => a * b);
 }
 
