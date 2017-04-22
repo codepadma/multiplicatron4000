@@ -1,0 +1,26 @@
+{
+  "name": "addinator",
+  "version": "0.1.0",
+  "description": "Sample app to Add deployed to cloud",
+  "main": "server/server.js",
+  "scripts": {
+    "postinstall": "browserify client/app.js -o client/bundle.js",
+    "start": "node server/server.js"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codepadma/multiplicatron4000.git"
+  },
+  "keywords": [
+    "multiply"
+  ],
+  "author": "padma",
+  "bugs": {
+    "url": "https://github.com/codepadma/multiplicatron4000/issues"
+  },
+  "homepage": "https://github.com/codepadma/multiplicatron4000#readme",
+  "dependencies": {
+    "browserify": "^14.3.0"
+  }
+}
