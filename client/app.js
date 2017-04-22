@@ -17,13 +17,16 @@ class ViewManager {
 
   onSubmit(event) {
   	event.preventDefault();
-    let product = NaN;
+    let product;
     let numbers = Array.from(document.getElementById('form-multiplicator').elements)
                    .filter(element => element.nodeName === 'INPUT')
                    .map(element => parseInt(element.value, 10))  
                    .filter(num => !Number.isNaN(num));
     if (numbers.length >= 2) {
       product = multiply(numbers);
+    }
+    if (product === undefined) {
+      product = NaN;
     }
     this.renderProduct(product);
   }
